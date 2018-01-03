@@ -295,7 +295,7 @@ function sqimap_mailbox_select($imap_stream, $mailbox) {
     }
 
     // cleanup $mailbox in order to prevent IMAP injection attacks
-    $mailbox = str_replace(array('\r', '\n'), array("", ""), $mailbox);
+    $mailbox = str_replace(array('\r', '\n'), array('', ''), $mailbox);
     set_filter(false);
     set_no_return(false);
     set_outputstream(false);

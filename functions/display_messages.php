@@ -114,7 +114,7 @@ $theme_default = &$glb['theme_default'];
                 "\"$width_and_height /><br/>\n";
     }
     $str7= ( $hide_sm_attributions ? '' :
-            '<small>' . sprintf (_("SquirrelMail version %s"), $version) . '<br />'.
+            '<small>' . sprintf (_('SquirrelMail version %s'), $version) . '<br />'.
             _('By the SquirrelMail Project Team') . "<br /></small>\n" ).
          '<table cellspacing="1" cellpadding="0" bgcolor="'.$color[1].'" width="70%">'.
          '<tr><td>'.
