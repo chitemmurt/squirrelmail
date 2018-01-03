@@ -550,7 +550,7 @@ function sqimap_mailbox_parse($line, $line_lsub) {
         $boxesall[$g]['flags'] = array();
         if (isset($line[$g])) {
             if (preg_match('/\(([^)]*)\)/', $line[$g], $regs)) {
-                $flags = trim(strtolower(str_replace('\\', '', $regs[1])));
+                $flags = trim(strtolower(str_replace("\\", '', $regs[1])));
                 if ($flags) {
                     $boxesall[$g]['flags'] = explode(' ', $flags);
                 }
